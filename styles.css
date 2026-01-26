@@ -230,7 +230,7 @@ body {
 .sample-title {
   font-size: 3.5rem;
   color: #e59e2c;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 
 }
 
@@ -245,18 +245,19 @@ body {
 
 .work-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  max-width: 900px;
-  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  max-width: 2000px;
 }
 
 .work-card {
   padding: 2rem;
   border: 1px solid rgba(117, 119, 128, 0.35);
   border-radius: 16px;
+  max-width: 600px;
   background: var(--surface);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
 }
 
 .work-card h4 {
@@ -282,11 +283,13 @@ body {
   text-decoration: underline;
 }  
 
-@media (max-width: 768px) {
-  .work-grid {
+@media (max-width: 600px) {
+  .services-grid {
     grid-template-columns: 1fr;
   }
 }
+
+
 
 
 /* ==== About Section ==== */
@@ -331,6 +334,14 @@ body {
   margin-bottom: 1rem;
 }
 
+.work-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.work-card a {
+  margin-top: auto;
+}
 
 @media (max-width: 900px) {
   .about-container {
@@ -435,4 +446,3 @@ mfundo
   margin-left: 15rem;
 
 }
-
